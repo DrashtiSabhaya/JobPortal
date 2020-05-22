@@ -1,0 +1,101 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="CompanyMaster.master.cs" Inherits="CompanyMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Job Point</title>
+    <link rel="icon" type="image/icon" href="images/logo/logo-main.png" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap4.1.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <section class="naigation">
+            <div class="navbar1">
+                <nav class="navbar">
+                    <div class="container-fluid m-0">
+                        <div class="logo">
+                            <a href="CompanyHome.aspx">
+                                <img src="images/logo/logo-main.png" />job point</a>
+                        </div>
+                        <ul class="nav navbar-nav"></ul>
+                        <ul class="navbar-nav flex-row">
+                            <li class="nav-item ml-2">
+                                <a href="Logout.aspx">
+                                    <button type="button" class="header-btn">Logout</button>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="navbar2">
+                <nav class="navbar navbar-expand-md">
+
+                    <!-- Toggler/collapsibe Button -->
+                    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                        <i class="fa fa-bars"></i>
+                    </button>
+
+                    <!-- Navbar links -->
+                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                        <ul class="navbar-nav m-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="CompanyHome.aspx">home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="CompanyJobSeeker.aspx">Job seeker Profile</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="CompanyApplications.aspx">Applications</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="CompanyShortlisted.aspx">Shortlisted Employees</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="CompanyJobs.aspx">Jobs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="CompanyProfile.aspx">Profile</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </section>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+
+        <section class="footer text-center">
+            <footer>
+                <img src="images/logo/logo-main.png" />
+                <div class="footer-social-icon">
+                    <ul>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+                <p>Job Point © 2020-All rights reserved.</p>
+            </footer>
+        </section>
+
+        <a id="toTop" title="Back to top" href="#"><i class="fa fa-upload"></i></a>
+
+        <script type="text/javascript" src="js/bootstrap.js"></script>
+        <script type="text/javascript" src="js/wow.min.js"></script>
+        <script type="text/javascript" src="js/custom.js"></script>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+        </asp:ContentPlaceHolder>
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,321 @@
+@import url("https://fonts.googleapis.com/css?family=PT+Serif&display=swap");
+*{
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	font-family: 'PT Serif', serif;
+	letter-spacing: 1px;
+}
+a:hover{
+	text-decoration: none;
+	outline: none;
+}
+button:focus{
+	outline: none;
+	border: none;
+}
+/*=====================================================
+					candidate-disc
+=======================================================*/
+.candidate-disc{
+	padding-top: 100px;
+	padding-bottom: 50px;
+	text-align: center;
+}
+.candidate-disc img{
+	border: 7px solid #e9ecef;
+	border-radius:50%;
+	height: 180px;
+	width: 180px;
+	margin-bottom: 20px;
+}
+figcaption a{
+	color: blue;
+	font-size: 20px;
+	letter-spacing: 2px;
+}
+.candidate-disc h6{
+	font-size: 17px;
+	font-style: italic;
+	padding-top: 7px;
+	margin-bottom: 5px;
+}
+.candidate-disc p{
+	color: #8c9398;
+}
+.candidate-disc ul{
+	margin-bottom: 20px;
+	overflow-y: hidden;
+}
+.candidate-disc ul li{
+	display: inline;
+	margin-right: 7px;	
+}
+.candidate-disc ul li a{
+	color: #8c9398;
+	transition: 0.5s;
+}
+.candidate-disc ul li a:hover{
+	color: #2529d8;
+}
+.candidate-disc .list2 li{
+	background-color: #ececec;
+	padding: 17px;
+	color: #555;
+	margin: 10px;
+}
+.candidate-disc .list1 li{
+	margin-right: 10px;
+}
+.candidate-disc .list1 li a:hover{
+	color: #f91a37 !important;
+}
+
+/*=====================================================
+					qualification
+=======================================================*/
+.qual-icon{
+	float: left;
+}
+.qual-icon i{
+	color: #f91a37;
+	font-size: 35px;
+	font-weight: bold;
+}
+.qual-info{
+	float: left;
+	margin-left: 25px;
+}
+.qual-info h5{
+	font-size: 20px;
+	margin-bottom: 5px;
+	overflow-y: hidden;
+}
+.qual-info p{
+	color: #8c9398;
+}
+.qual-icon,.qual-info{
+	display: inline;
+}
+/*=====================================================
+					**************
+=======================================================*/
+.heading h2{
+	font-size: 30px;
+	color: #333;
+	line-height: 30px;
+	line-height: 50px;
+}
+/*=====================================================
+					candidate-about
+=======================================================*/
+.candidate-about{
+	padding-top: 50px;
+}
+.candidate-about p{
+	padding-top: 10px;
+	color: #8c9398;
+	overflow-y: hidden;
+}
+/*=====================================================
+			Education,Experience,Awards
+=======================================================*/
+.candidate-story-info-icon i{
+	font-size: 50px;
+	color: #434648;
+	border: 1px solid #ddd;
+	height: 110px;
+	width: 110px;
+	font-weight: bold;
+	margin-right: 70px;	
+	line-height:100px;
+	text-align: center;
+}
+.candidate-story-info-text{
+	margin-left: 30px;
+}
+.candidate-story-info-text h4{
+	color: #2529d8;
+	overflow-y: hidden;
+}
+.candidate-story-info-text h6{
+	overflow-y: hidden;
+}
+.candidate-story-info-text p{
+	color: #8c9398;
+	line-height: 30px;
+}
+.candidate-story-info,.candidate-story-info-icon{
+	float: left;
+}
+/*=====================================================
+					Skills
+=======================================================*/
+.skills-info p{
+	color: #8c9398;
+	text-transform: uppercase;
+	padding-top: 15px;
+}
+/*=====================================================
+					candidate-btn
+=======================================================*/
+.candidate-btn .btn{
+	border: 1px solid #ccc;
+	border-radius: 0;
+	width: 18%;
+	padding:15px 20px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	transition: 0.5s all;
+}
+.candidate-btn .btn:hover{
+	background-color: #2529d8;
+	border: 1px solid #2529d8;
+	color: #fff;
+}
+.candidate-btn ul li{
+	display: inline;
+	margin-right: 10px;
+}
+/*=====================================================
+					business network
+=======================================================*/
+.network{
+	background-color: #f7f7f7;
+	padding: 30px 40px;
+	width: 100%;
+	height: auto;
+}
+.network .heading h2{
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 25px;
+	letter-spacing: 2px;
+}
+.network label{
+	font-weight: bold;
+	color: #454646;
+	letter-spacing: 2px;
+}
+.network input{
+	width: 100%;
+	height: 50px;
+	border:1px solid #ebeeef;
+	margin-bottom: 20px;
+	border-radius: 0;	
+	transition: 0.5s;
+	color: #777;	
+	outline: none;
+	font-size: 15px;
+}
+.network input:focus{
+	border: 4px solid #cae1f8;
+	outline: 5px;
+}
+.network textarea{
+	width: 100%;
+	height: 180px;
+	outline: none;
+	border: 1px solid #ebeeef;
+}
+.network .btn{
+	width: 100%;
+	text-align: center;
+	text-transform: uppercase;
+	color: #fff;
+	height: 55px;
+	background-color: #f91a37;
+	border-radius: 0;
+	margin-top: 30px;
+	transition: 0.5s all;
+	letter-spacing: 2px;
+	font-size: 15px;
+	
+}
+.network .btn:hover{
+	background-color: #2529d8;
+}
+.network textarea:focus{
+	border: 4px solid #cae1f8;
+}
+/*=====================================================
+						Responcive
+=======================================================*/
+@media only screen and (max-width:991px){
+	.candidate-disc img{
+		height: 130px;
+		width: 130px;
+	}
+	.qualification{
+		text-align: center;
+	}
+	.qual-info,.qual-icon{
+		float: none;
+	}	
+	.qual-icon{
+		margin-left: 20px;
+	}
+	.candidate-story-info-icon i{
+		margin-right: 50px;
+	}
+	.candidate-btn .btn{
+		width: 28%;
+	}
+}
+@media only screen and (max-width:768px){
+	.candidate-disc img{
+		height: 110px;
+		width: 110px;
+	}
+}
+@media only screen and (max-width:576px){
+	.candidate-disc img{
+		height: 100px;
+		width: 100px;
+	}
+	.candidate-story .pl-5{
+		padding-left: 1em !important;	
+	}
+	.candidate-btn .btn{
+		width: 38%;
+	}
+}
+@media only screen and (max-width:320px){
+	.candidate-disc img{
+		height: 90px;
+		width: 90px;
+	}
+	.candidate-story-info,.candidate-story-info-icon{
+		float: none;
+	}
+	.candidate-story-info-icon i{
+		margin-right: 0;
+	}
+	.candidate-story-info-text{
+		text-align: center;
+		margin-left: 0;
+	}
+	.candidate-story .pl-5{
+		padding-left: 0em !important;	
+	}
+	.candidate-story-info .mt-5{
+		margin-top: 20px !important;
+	}
+	.heading h2{
+		text-align: center;
+		font-size: 25px;
+	}
+	.candidate-btn{
+		text-align: center;
+	}
+	.candidate-btn .btn{
+		width: 70%;
+		margin-top: 10px;
+	}
+	.network .heading h2{
+		font-size: 20px;
+	}
+	.network{
+		padding: 30px 20px;
+	}
+}
